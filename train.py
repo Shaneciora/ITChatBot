@@ -26,7 +26,7 @@ def train_bot():
 
     trainer2.train([
         "System Status",
-        "The system is operational, for more information, type 'info'",
-        "info",
+        "The system is operational, for more information, type 'Detailed Information'",
+        "Detailed Information",
         "display system information",
     ])
