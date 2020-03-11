@@ -28,5 +28,5 @@ def train_bot():
         "System Status",
         "The system is operational, for more information, type 'info'",
         "info",
-        "<display system information>",
+        "display system information",
     ])
