@@ -14,7 +14,7 @@ def train_bot():
 
     trainer2.train([
         "I need some help.",
-        "What do you need help with? I can offer help regarding: \n Account Information \n Forgot Password \n System Status",
+        "What do you need help with? I can offer help regarding: Account Information, Forgot Password, Server Status, New Support Request, Current Support Tickets",
         "Account Information",
         "Your account information:",
     ])
@@ -25,8 +25,18 @@ def train_bot():
     ])
 
     trainer2.train([
-        "System Status",
-        "The system is operational, for more information, type 'Detailed Information'",
+        "Server Status",
+        "The server is online, for more information, type 'Detailed Information'",
         "Detailed Information",
-        "display system information",
+        "display admin log in and server information",
+    ])
+
+    trainer2.train([
+        "New Support Request",
+        "Please use this webpage to file a new support ticket",
+    ])
+
+    trainer2.train([
+        "Current Support Tickets",
+        "list current account tickets",
     ])
