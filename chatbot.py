@@ -1,5 +1,6 @@
 from chatterbot import ChatBot
 
+
 # Create a new instance of a ChatBot
 chatbot = ChatBot(
     'Dave',
@@ -26,3 +27,4 @@ while True:
     # Press ctrl-c or ctrl-d on the keyboard to exit
     except (KeyboardInterrupt, EOFError, SystemExit):
         break
+
