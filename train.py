@@ -15,7 +15,7 @@ def train_bot():
 
     trainer2.train([
         "I need some help.",
-        "What do you need help with? I can offer help regarding: <br>| <strong>Account Information</strong> | <strong>Forgot Password</strong> | <strong>Server Status</strong> | <strong>New Support Request</strong> | <strong>Current Support Tickets</strong> |",
+        "What do you need help with? I can offer help regarding: <br>| <strong>Account Information</strong> |<br>| <strong>Forgot Password</strong> |<br>| <strong>Server Status</strong> |<br>| <strong>New Support Request</strong> |<br>| <strong>Current Support Tickets</strong> |",
         "Account Information",
         "Your account information:",
     ])
@@ -41,3 +41,18 @@ def train_bot():
         "Current Support Tickets",
         "list current account tickets",
     ])
+
+    trainer2.train([
+        "Hey",
+        "Hi",
+        "Sup",
+        "Nm hbu",
+        "test",
+    ])
+
+    trainer2.train([
+        "Hello Dave""Hey Dave""Hi Dave",
+        "Greetings, human",
+    ])
+
+
