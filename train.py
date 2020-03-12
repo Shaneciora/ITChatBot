@@ -15,44 +15,29 @@ def train_bot():
 
     trainer2.train([
         "I need some help.",
-        "What do you need help with? I can offer help regarding: <br>| <strong>Account Information</strong> |<br>| <strong>Forgot Password</strong> |<br>| <strong>Server Status</strong> |<br>| <strong>New Support Request</strong> |<br>| <strong>Current Support Tickets</strong> |",
+        "What do you need help with? I can offer help regarding: <br>| <strong>Account Information</strong> |<br>| <strong>Forgot Password</strong> |<br>| <strong>Server Status</strong> |<br>| <strong>New Support Request</strong> |<br>| <strong>Support Tickets</strong> |",
         "Account Information",
-        "Your account information:",
+        "Your account information:<br>Username: admin<br>Email: admin@mac.com<br>Account Type: ADMINISTRATOR<br><strong>Manage Information</strong>",
     ])
 
     trainer2.train([
         "Forgot Password",
-        "Please enter your account email and we will send you a verification code to reset your password.",
+        "Please reply with your account email and we will send you a verification code to reset your password.",
     ])
 
     trainer2.train([
         "Server Status",
-        "The server is online, for more information, type 'Detailed Information'",
-        "Detailed Information",
-        "display admin log in and server information",
+        "Your server (Server 1) is online, for more information, type 'Server Information'",
+        "Server Information",
+        "User: admin <br>Pass: ***** <br><strong>Server 1</strong> | Status: Online | Ping: 86 |<br><strong>Server 2</strong> | Status: Online | Ping: 130 |<br><strong>TEST Server</strong> | Status: Offline | Ping: N/A |",
     ])
 
     trainer2.train([
         "New Support Request",
-        "Please use this webpage to file a new support ticket",
+        "Follow this link to create a new support request: www.company.com/newsupportticket",
     ])
 
     trainer2.train([
-        "Current Support Tickets",
-        "list current account tickets",
+        "Support Tickets",
+        "Here is a list of your support tickets:<br>325678 | <strong>I need to change the email address associated with this account</strong> | Status: Unresolved <br>329765 | <strong>My account does not have adequate permissions</strong> | Status: Resolved",
     ])
-
-    trainer2.train([
-        "Hey",
-        "Hi",
-        "Sup",
-        "Nm hbu",
-        "test",
-    ])
-
-    trainer2.train([
-        "Hello Dave""Hey Dave""Hi Dave",
-        "Greetings, human",
-    ])
-
-
