@@ -27,8 +27,11 @@ def train_bot():
 
     trainer2.train([
         "Server Status",
-        "Your server (Server 1) is online, for more information, type 'Server Information'",
-        "Server Information",
+        "Your server (Server 1) is online, for more information, type 'List Servers'",
+    ])
+
+    trainer2.train([
+        "List Servers",
         "User: admin <br>Pass: ***** <br><strong>Server 1</strong> | Status: Online | Ping: 86 |<br><strong>Server 2</strong> | Status: Online | Ping: 130 |<br><strong>TEST Server</strong> | Status: Offline | Ping: N/A |",
     ])
 
