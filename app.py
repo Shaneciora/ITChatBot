@@ -1,12 +1,13 @@
 from flask import Flask, render_template, request
 from chatbot import chatbot
+
 from train import train_bot
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template("home.html")
+    return render_template("index.html")
 
 @app.route("/get")
 def get_bot_response():
@@ -15,4 +16,5 @@ def get_bot_response():
 
 if __name__ == "__main__":
     train_bot()
-    app.run()
+    app.run(host="10.0.0.80", port=5000, debug=True)
+#    app.run(debug=True)

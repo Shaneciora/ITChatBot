@@ -3,7 +3,7 @@
   <title>Dave</title>
   <head>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -18,25 +18,37 @@
         <div class="box"></div>
         <div class="boxed">
           <div>
-            <div id="chatbox">
+              <div class="card text-center" style="padding-top: 100px; padding-left: 1%; padding-right: 1%">
+                  <div class="card-header">
+                    Chatbot
+                  </div>
+                  <br><br><br><br><br>
+                <div class="card-body">
+                    <div id="chatbox">
 
-            </div>
-            <div id="userInput">
-              <input id="textInput" name="msg" class="form-control form-control-sm" type="text" placeholder="Message">
-            </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                      <div id="userInput">
+                        <input id="textInput" name="msg" class="form-control form-control-lg" type="text" placeholder="Message">
+                      </div>
+                    </div>
+                    
+                </div>
+              </div>
+            
             
           </div>
           <script>
             function getBotResponse() {
               var rawText = $("#textInput").val();
-              var userHtml = '<p class="userText"><span>' + rawText + "</span></p>";
+              var userHtml = '<p class="userText" align="right" style="font-size: large"><span>' + rawText + "</span></p>";
               $("#textInput").val("");
               $("#chatbox").append(userHtml);
               document
                 .getElementById("userInput")
                 .scrollIntoView({ block: "start", behavior: "smooth" });
               $.get("/get", { msg: rawText }).done(function(data) {
-                var botHtml = '<p class="botText"><span>' + data + "</span></p>";
+                var botHtml = '<p class="botText" align="left" style="font-size: large; color:bluegit "><span>[DAVE]: ' + data + "</span></p>";
                 $("#chatbox").append(botHtml);
                 document
                   .getElementById("userInput")

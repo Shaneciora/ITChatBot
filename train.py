@@ -6,11 +6,12 @@ trainer = ChatterBotCorpusTrainer(chatbot)
 trainer2 = ListTrainer(chatbot)
 
 def train_bot():
+    '''
     trainer.train(
         "chatterbot.corpus.english.greetings",
         "chatterbot.corpus.english.conversations"
 
-    )
+    )'''
 
     trainer2.train([
         "I need some help.",
