@@ -15,7 +15,7 @@ def train_bot():
 
     trainer2.train([
         "I need some help.",
-        "What do you need help with? I can offer help regarding: Account Information, Forgot Password, Server Status, New Support Request, Current Support Tickets",
+        "What do you need help with? I can offer help regarding: | </strong>Account Information</strong> | </strong> Forgot Password</strong> | </strong>Server Status</strong> | </strong>New Support Request</strong> | </strong>Current Support Tickets</strong> |",
         "Account Information",
         "Your account information:",
     ])
