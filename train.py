@@ -42,5 +42,5 @@ def train_bot():
 
     trainer2.train([
         "Support Tickets",
-        "Here is a list of your support tickets:<br>325678 | <strong>I need to change the email address associated with this account</strong> | Status: Unresolved <br>329765 | <strong>My account does not have adequate permissions</strong> | Status: Resolved",
+        "Here is a list of your support tickets:<br>325678 | <strong>I need to change my email address</strong> | Status: Unresolved <br>329765 | <strong>No Server 2 access</strong> | Status: Resolved",
     ])
